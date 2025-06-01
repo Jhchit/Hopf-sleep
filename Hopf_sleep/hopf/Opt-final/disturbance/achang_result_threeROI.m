@@ -8,7 +8,7 @@ OUT = out;
 Rta = out.Rta;
 Rta(91) = 0.001;   %31是acc左脑区%91是下丘脑右
 Rta(92) = 0.001;   %32是acc右脑区%92是下丘脑左
-n = 19;
+n = 19;%早上填18，晚上19
 
 result(100) = struct('Alff',[],'mean_alff',[],'FSim_x',[],'meanfc_x',[]);
 meanfc_y = zeros(4,100);

@@ -12,7 +12,7 @@ Rta(91) = -0.01;   %31是acc左脑区%91是下丘脑右
 Rta(92) = -0.01;  %32是acc右脑区%92是下丘脑左
 
 
-n = 19;
+n = 19;%早上填18，晚上19
 
 result(100) = struct('Alff',[],'mean_alff',[],'FSim_x',[],'meanfc_x',[]);
 meanfc_y = zeros(4,100);
@@ -24,7 +24,6 @@ for i = 1:100
     %干扰后
     xs(93,:) = mean(xs([21,41],:),1);
     xs(94,:) = mean(xs([22,42],:),1);
-    meanfc = observable_FC(xs);
 
     %干扰前
     XS = out.xs;

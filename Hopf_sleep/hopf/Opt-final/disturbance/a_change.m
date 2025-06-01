@@ -40,7 +40,7 @@ for x = 1:2
     xs_accN = xs_acc{x};
 
     %19人是否分开算
-    if n == 19
+    if n == 19 || n == 18
         ts_1 = cell(1,n);
         for i =1:n
             ts_1{i} = xs_accN(:,T*(i-1)+1:T*i);
